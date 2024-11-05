@@ -56,6 +56,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.nav-link.current-page,
 .nav-link:hover,
 .nav-link:focus {
   color: #404bbf;
@@ -238,10 +239,12 @@ img {
 }
 
 .portfolio-container .portfolio-list {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
+  overflow: hidden;
 }
 
 .portfolio-item {
@@ -258,6 +261,11 @@ img {
 .portfolio-content {
   position: relative;
   overflow: hidden;
+}
+
+.portfolio-category {
+  letter-spacing: 0.02em;
+  height: 100%;
 }
 
 .portfolio-overlay {
@@ -289,6 +297,12 @@ img {
   align-items: baseline;
 }
 
+.footer-container {
+  display: flex;
+  align-items: baseline;
+  margin-right: 120px;
+}
+
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
@@ -296,8 +310,9 @@ img {
 
 .footer-text {
   line-height: 1.5;
-  color: #f4f4fd;
   max-width: 600px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
 }
 
 .footer-social {
@@ -316,6 +331,11 @@ img {
 
 .footer-social .social-list {
   gap: 16px;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: #31d0aa; 
 }
 
 /* Utility Classes */
