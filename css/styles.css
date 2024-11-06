@@ -229,6 +229,11 @@ img {
   background-color: #404bbf;
 }
 
+.social-item:hover a,
+.social-link:focus a {
+  background-color: #404bbf;
+}
+
 .icon {
   fill: #f4f4fd;
 }
